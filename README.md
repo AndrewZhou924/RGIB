@@ -1,12 +1,31 @@
 Official code for the paper "Combating Bilateral Edge Noise for Robust Link Prediction" (NeurIPS 2023).
 
+
+
 ## Introduction
 
 Although link prediction on graphs has achieved great success with the development of graph neural networks (GNNs), the potential robustness under the edge noise is still less investigated. To close this gap, we first conduct an empirical study to disclose that the edge noise bilaterally perturbs both input topology and target label, yielding severe performance degradation and representation collapse. 
 
-To address this dilemma, we propose an information-theory-guided principle, Robust Graph Information Bottleneck (RGIB), to extract reliable supervision signals and avoid representation collapse. Different from the basic information bottleneck, RGIB further decouples and balances the mutual dependence among graph topology, target labels, and representation, building new learning objectives for robust representation against the bilateral noise. 
+<img src="./misc/bilateral-edge-noise.png" style="zoom: 15%;" />
+
+<p align="center"><em>Figure 1.</em> Link prediction with bilateral edge noise. The GNN takes the graph as inputs, generates the edge representation, and then predicts the existence of unseen edges with labels.</p>
+
+To address this dilemma, we propose an information-theory-guided principle, Robust Graph Information Bottleneck (RGIB), to extract reliable supervision signals and avoid representation collapse. Different from the basic information bottleneck, RGIB further decouples and balances the mutual dependence among graph topology ($\tilde{A}$), target labels ($\tilde{Y}$), and representation ($\bf{H}$), building new learning objectives for robust representation against the bilateral noise. 
+
+<img src="./misc/GIB-RGIB.png" style="zoom: 15%;" />
+
+<p align="center"><em>Figure 2.</em> The principles of basic GIB and the proposed RGIB.</p>
 
 Two instantiations, RGIB-SSL and RGIB-REP, are explored to leverage the merits of different methodologies, i.e., self-supervised learning and data reparameterization, for implicit and explicit data denoising, respectively. 
+
+<table><tr>
+<td><img src="./misc/digram-RGIB.png"></td>
+<td><img src="./misc/digram-RGIB-SSL.png"></td>
+<td><img src="./misc/digram-RGIB-REP.png"></td>
+</tr></table>
+
+<p align="center"><em>Figure 3.</em> Digrams of RGIB (left) and its two instantiations RGIB-SSL (middle) and RGIB-REP (right).</p>
+
 
 
 ## Usage
@@ -90,6 +109,8 @@ python3 RGIB-ssl-training.py --gnn_model GCN --dataset Cora --noise_ratio 0.2 --
 
 python3 RGIB-rep-training.py --gnn_model GCN --dataset Cora --noise_ratio 0.2 --search_scheduler --search_iteration 50
 ```
+
+
 
 ### Citation
 
