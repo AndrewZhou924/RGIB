@@ -12,7 +12,7 @@ Although link prediction on graphs has achieved great success with the developme
 
 To address this dilemma, we propose an information-theory-guided principle, Robust Graph Information Bottleneck (RGIB), to extract reliable supervision signals and avoid representation collapse. Different from the basic information bottleneck, RGIB further decouples and balances the mutual dependence among graph topology ($\tilde{A}$), target labels ($\tilde{Y}$), and representation ($\bf{H}$), building new learning objectives for robust representation against the bilateral noise. 
 
-<img src="./misc/GIB-RGIB.png" style="zoom: 15%;" />
+<p align="center"><img src="./misc/GIB-RGIB.png" width="500" /></p>
 
 <p align="center"><em>Figure 2.</em> The principles of basic GIB and the proposed RGIB.</p>
 
