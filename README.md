@@ -1,3 +1,5 @@
+Official code for the paper "Combating Bilateral Edge Noise for Robust Link Prediction" (NeurIPS 2023).
+
 ## Introduction
 
 Although link prediction on graphs has achieved great success with the development of graph neural networks (GNNs), the potential robustness under the edge noise is still less investigated. To close this gap, we first conduct an empirical study to disclose that the edge noise bilaterally perturbs both input topology and target label, yielding severe performance degradation and representation collapse. 
@@ -90,7 +92,7 @@ python3 RGIB-rep-training.py --gnn_model GCN --dataset Cora --noise_ratio 0.2 --
 ### Citation
 
 If you find our work useful, please kindly cite our paper.
-```
+```bibtex
 @inproceedings{zhou2023combating,
 title={Combating Bilateral Edge Noise for Robust Link Prediction},
 author={Zhanke Zhou and Jiangchao Yao and Jiaxu Liu and Xiawei Guo and Quanming Yao and Li He and Liang Wang and Bo Zheng and Bo Han},
