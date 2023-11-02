@@ -34,7 +34,9 @@ Template:
 ```
 python3 mixed-noise-generation.py --dataset "dataset name" --noise_ratio "a float"
 ```
-Note that `dataset` is in range of `[Cora, Citeseer, Pubmed, chameleon, squirrel, facebook]`, and `noise_ratio` is in range of `[0,1]`.
+Note that 
+- `dataset` is in range of `[Cora, Citeseer, Pubmed, chameleon, squirrel, facebook]`.
+- `noise_ratio` is in range of `[0,1]`.
 
 Examples:
 ```
