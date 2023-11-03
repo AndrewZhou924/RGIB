@@ -1,6 +1,16 @@
+<h1 align="center">RGIB: Robust Graph Information Bottleneck</h1>
+<p align="center">
+    <a href="https://arxiv.org/pdf/2311.01196.pdf"><img src="https://img.shields.io/badge/arXiv-2311.01196-b31b1b.svg" alt="Paper"></a>
+    <a href="https://github.com/AndrewZhou924/RGIB"><img src="https://img.shields.io/badge/-Github-grey?logo=github" alt="Github"></a>
+    <!-- <a href=""><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a> -->
+    <a href="https://openreview.net/pdf?id=ePkLqJh5kw"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=blue"> </a>
+    <!--     <a href="https://github.com/LFhase/PAIR/blob/main/LICENSE"> <img alt="License" src="https://img.shields.io/github/license/LFhase/PAIR?color=blue"> </a> -->
+    <!-- <a href="https://neurips.cc/virtual/2022/poster/54643"> <img src="https://img.shields.io/badge/Video-grey?logo=Kuaishou&logoColor=white" alt="Video"></a> -->
+    <!-- <a href="https://lfhase.win/files/slides/PAIR.pdf"> <img src="https://img.shields.io/badge/Slides-grey?&logo=MicrosoftPowerPoint&logoColor=white" alt="Slides"></a> -->
+    <!--  <a href="https://icml.cc/media/PosterPDFs/ICML%202022/a8acc28734d4fe90ea24353d901ae678.png"> <img src="https://img.shields.io/badge/Poster-grey?logo=airplayvideo&logoColor=white" alt="Poster"></a> -->
+</p>
+
 Official code for the paper "Combating Bilateral Edge Noise for Robust Link Prediction" (NeurIPS 2023).
-
-
 
 ## Introduction
 
